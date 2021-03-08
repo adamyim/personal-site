@@ -15,9 +15,7 @@
 	<link rel="shortcut icon" type="image/jpg" href="images/AYiconV.jpg"/>
 	<title>Adam Yim</title>
 
-	<!-- TBD for later -->
-	<script src=""></script>
-	<style></style>
+	<!-- Scripts -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -25,12 +23,12 @@
 </head>
 <body class="bg-custom-light-pink">
 
-<nav class="navbar navbar-expand-sm bg-custom-pink navbar-dark px-3">
+<nav class="navbar navbar-expand-sm bg-custom-pink px-3">
   <a class="navbar-brand" href="#">
   	<img src="images/AYiconH_transparent.jpg" width="90" height="30" class="d-inline-block align-middle" alt="">
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
+  <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon custom-toggler"></span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
@@ -38,10 +36,15 @@
         <a class="nav-link" href="#">About Me</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Photography</a>
+        <a class="nav-link" href="#">Experience</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Video</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Projects</a>
+        <div class="dropdown-menu bg-custom-light-pink">
+        	<a class="dropdown-item" href="#">Photography</a>
+        	<a class="dropdown-item" href="#">Video</a>
+        	<a class="dropdown-item" href="#">Writing</a>
+        </div>
       </li>
         <li class="nav-item">
         <a class="nav-link" href="#">Contact</a>
@@ -54,6 +57,21 @@
 	<div class="container">
 		<h1>hello, world</h1>
 		<p>this is the personal website for Adam Yim</p>
+
+		<div class="row">		
+			<div class="col-md-5 col-lg-4">
+				<img class="square-cover rounded-borders mx-auto d-block" src="images/DemonDays.jpg" alt="Adam Yim">
+			</div>
+			<div class="col-md-7 col-lg-8">
+				<h2>About Me</h2>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+		<div class="row">
+			<img class="section-break mx-auto d-block" src="images/Bolt.png">
+		</div>
+
+		<br><br>
 	</div>
 
 

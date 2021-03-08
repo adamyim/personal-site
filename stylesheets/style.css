@@ -6,45 +6,105 @@ FFAFF7 - pink
 FFDA18 - gold
 FF8A00 - orange
 A81EE9 - purple
+3C1362 - dark purple for text
 
 */
 
+body, h1, h2, h3, .nav-link, .dropdown-item {
+	color: #3C1362;
+}
+
+.nav-link:hover/*, .dropdown-item:hover*/ {
+	color: #A81EE9;
+	/*background-color: #FFAFF7;*/
+}
+
+.dropdown-item:hover {
+	background-color: #FFAFF7;
+	border-radius: 3px;
+}
+
+.dropdown-menu {
+	border-color: #3C1362;
+	max-width: 100px; 
+	padding: 3px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#3C1362' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: #3C1362;
+} 
+
+.custom-text-colour {
+	color: #3C1362;
+}
+
 .bg-custom-light-pink {
-	background-color:#FFD6FB;
+	background-color: #FFD6FB;
 }
 
 .custom-colour-light-pink {
-	color:#FFD6FB;
+	color: #FFD6FB;
 }
 
 .bg-custom-pink {
-	background-color:#FFAFF7;
+	background-color: #FFAFF7;
 }
 
 .custom-colour-pink {
-	color:#FFAFF7;
+	color: #FFAFF7;
 }
 
 .bg-custom-gold {
-	background-color:#FFDA18;
+	background-color: #FFDA18;
 }
 
 .custom-colour-gold {
-	color:#FFDA18;
+	color: #FFDA18;
 }
 
 .bg-custom-orange {
-	background-color:#FF8A00;
+	background-color: #FF8A00;
 }
 
 .custom-colour-orange {
-	color:#FF8A00;
+	color: #FF8A00;
 }
 
 .bg-custom-purple {
-	background-color:#A81EE9;
+	background-color: #A81EE9;
 }
 
 .custom-colour-purple {
-	color:#A81EE9;
+	color: #A81EE9;
+}
+
+.square-cover {
+	object-fit: cover;
+	max-width: 300px;
+	max-height: 300px;
+	min-width: 175px;
+	min-height: 175px;
+	width: 25vw;
+	height: 25vw;
+}
+
+.rounded-borders {
+	position: relative;
+	border-radius: 50px;
+	border: 3px solid #A81EE9;
+	box-shadow:
+		0 0 0 2px #FFDA18,
+		0 0 0 3px #FF8A00,
+		0 0 0 5px #FFAFF7;
+	margin:5px;
+}
+
+.section-break {
+	width: 350px;
+	height: 27px;
+	margin: 30px;
 }
