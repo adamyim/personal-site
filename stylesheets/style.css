@@ -10,25 +10,75 @@ A81EE9 - purple
 
 */
 
-body, h1, h2, h3, .nav-link, .dropdown-item {
+body, h2, h3, .nav-link, .dropdown-item {
 	color: #3C1362;
 }
 
-.nav-link:hover/*, .dropdown-item:hover*/ {
+.thin-underline {
+	border-bottom: 1px solid currentColor;
+	display: inline-block;
+	line-height: 1;
+}
+
+/*********************************
+ ---------------------------------
+
+NAV DROPDOWN STYLING
+
+---------------------------------
+*********************************/
+
+.nav-link:hover {
 	color: #A81EE9;
-	/*background-color: #FFAFF7;*/
 }
 
 .dropdown-item:hover {
 	background-color: #FFAFF7;
-	border-radius: 3px;
+	border-radius: 4px;
 }
 
 .dropdown-menu {
-	border-color: #3C1362;
+	border: 1px solid #3C1362;
 	max-width: 100px; 
 	padding: 3px;
 }
+
+/*********************************
+ ---------------------------------
+
+ANIMATE DROPDOWN IN NAV
+
+---------------------------------
+*********************************/
+
+.dropdown-menu--animate.collapsing {
+    display: block;
+}
+
+.dropdown-menu--animate {
+    opacity: 0.8;
+    height: 0;
+    display: block;
+    transition: all 0.3s;
+    overflow: hidden;
+    transform-origin: top;
+    transform: scale(1,0);
+}
+
+.dropdown-menu--animate.show {
+    opacity: 1;
+    height: auto;
+    transition: all 0.3s;
+    transform: scale(1);
+}
+
+/*********************************
+ ---------------------------------
+
+HAMBURGER ICON COLOUR CHANGE
+
+---------------------------------
+*********************************/
 
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#3C1362' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -36,7 +86,76 @@ body, h1, h2, h3, .nav-link, .dropdown-item {
 
 .custom-toggler.navbar-toggler {
   border-color: #3C1362;
-} 
+}
+
+/*********************************
+ ---------------------------------
+
+MIGHT DELETE
+
+---------------------------------
+*********************************/
+
+.hero-image {
+	object-fit: cover;
+	/* max-width: 700px;*/
+	min-width: 300px;
+	max-height: 200px;
+	width: 80vw;
+	height: 70vw;
+	border-radius: 5px;
+}
+
+/*********************************
+ ---------------------------------
+
+SQUARE IMAGE W/ BORDERS
+
+---------------------------------
+*********************************/
+
+.square-cover {
+	object-fit: cover;
+	max-width: 300px;
+	max-height: 300px;
+	min-width: 175px;
+	min-height: 175px;
+	width: 25vw;
+	height: 25vw;
+}
+
+.rounded-borders {
+	position: relative;
+	border-radius: 50px;
+	border: 3px solid #A81EE9;
+	box-shadow:
+		0 0 0 2px #FFDA18,
+		0 0 0 3px #FF8A00,
+		0 0 0 5px #FFAFF7;
+	margin:5px;
+}
+
+/*********************************
+ ---------------------------------
+
+IMAGE FORMATTING FOR SECTION BREAK
+
+---------------------------------
+*********************************/
+
+.section-break {
+	width: 350px;
+	height: 27px;
+	margin: 30px;
+}
+
+/*********************************
+ ---------------------------------
+
+MISC COLOUR DEFINITIONS
+
+---------------------------------
+*********************************/
 
 .custom-text-colour {
 	color: #3C1362;
@@ -80,31 +199,4 @@ body, h1, h2, h3, .nav-link, .dropdown-item {
 
 .custom-colour-purple {
 	color: #A81EE9;
-}
-
-.square-cover {
-	object-fit: cover;
-	max-width: 300px;
-	max-height: 300px;
-	min-width: 175px;
-	min-height: 175px;
-	width: 25vw;
-	height: 25vw;
-}
-
-.rounded-borders {
-	position: relative;
-	border-radius: 50px;
-	border: 3px solid #A81EE9;
-	box-shadow:
-		0 0 0 2px #FFDA18,
-		0 0 0 3px #FF8A00,
-		0 0 0 5px #FFAFF7;
-	margin:5px;
-}
-
-.section-break {
-	width: 350px;
-	height: 27px;
-	margin: 30px;
 }

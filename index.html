@@ -8,6 +8,8 @@
 	<!-- Bootstrap CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
+	<link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css">
+
 	<!-- Custom CSS -->
 	<link href="stylesheets/style.css" rel="stylesheet">
 
@@ -23,7 +25,8 @@
 </head>
 <body class="bg-custom-light-pink">
 
-<nav class="navbar navbar-expand-sm bg-custom-pink px-3">
+<!-- NAV BAR -->
+<nav class="navbar sticky-top navbar-expand-sm bg-custom-pink px-3">
   <a class="navbar-brand" href="#">
   	<img src="images/AYiconH_transparent.jpg" width="90" height="30" class="d-inline-block align-middle" alt="">
   </a>
@@ -36,14 +39,14 @@
         <a class="nav-link" href="#">About Me</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Experience</a>
+        <a class="nav-link" href="#">Work</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Projects</a>
-        <div class="dropdown-menu bg-custom-light-pink">
-        	<a class="dropdown-item" href="#">Photography</a>
-        	<a class="dropdown-item" href="#">Video</a>
-        	<a class="dropdown-item" href="#">Writing</a>
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Play</a>
+        <div class="dropdown-menu dropdown-menu--animate bg-custom-light-pink">
+        	<a class="dropdown-item" href="#">Photos</a>
+        	<a class="dropdown-item" href="#">Videos</a>
+        	<a class="dropdown-item" href="#">Words</a>
         </div>
       </li>
         <li class="nav-item">
@@ -52,27 +55,122 @@
     </ul>
   </div>  
 </nav>
-<br>
-	
-	<div class="container">
-		<h1>hello, world</h1>
-		<p>this is the personal website for Adam Yim</p>
+<!-- NAV BAR -->
 
-		<div class="row">		
-			<div class="col-md-5 col-lg-4">
-				<img class="square-cover rounded-borders mx-auto d-block" src="images/DemonDays.jpg" alt="Adam Yim">
-			</div>
-			<div class="col-md-7 col-lg-8">
-				<h2>About Me</h2>
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<!-- BIG HEADER IMAGE -->
+<div class="text-center bg-image" style="background-image: url('images/DemonDays.jpg'); background-position: center;
+	background-size: cover;
+	height: 80vh;
+	">
+	<div class="mask"  style="background-color: rgba(0, 0, 0, 0.6); height: 80vh">
+		<div class="d-flex justify-content-center align-items-center h-100">
+			<div>
+				<div class="custom-colour-gold">
+					<h1 class="thin-underline mb-3" style="font-size: 4em">Adam Yim</h1>
+				</div>
+				
+				<div class="custom-colour-light-pink" style="display: flex">
+					<div class="col-3">
+					</div>
+					<div class="col-6 pt-1" style="vertical-align: middle; align-items: center; justify-content: center; font-size: 1.2em; border: 1px solid #FFD6FB; border-radius: 5px">
+					<i class="cib-gmail mx-2"></i>
+					<i class="cib-twitter mx-2"></i>
+					<i class="cib-linkedin-in mx-2"></i>
+				</div>
+				<div class="col-3">
+				</div>
+
+				</div>
 			</div>
 		</div>
-		<div class="row">
-			<img class="section-break mx-auto d-block" src="images/Bolt.png">
-		</div>
+       <!-- <div class="d-flex justify-content-center align-items-center h-100">
+	       		<div class="text-white">
+	       			<h1 class="mb-3">Heading</h1>
+	       			<h4 class="mb-3">Subheading</h4>
+	       			<a class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a> 
+	       		</div>
+      		</div> -->
+    </div>
+</div>
+<!-- BIG HEADER IMAGE -->
 
-		<br><br>
+<!-- CONTENT -->
+<div class="container">
+
+	<!-- SECTION DIVIDER -->
+	<div class="row">
+		<img class="section-break mx-auto d-block" src="images/Bolt.png">
 	</div>
+
+	<!-- ABOUT ME -->
+	<div class="row">		
+		<div class="col">
+			<h2>About Me</h2>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+
+	<!-- SECTION DIVIDER -->
+	<div class="row">
+		<img class="section-break mx-auto d-block" src="images/Bolt.png">
+	</div>
+
+	<!-- WORK -->
+	<div class="row">		
+		<div class="col">
+			<h2>Work</h2>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+
+	<!-- SECTION DIVIDER -->
+	<div class="row">
+		<img class="section-break mx-auto d-block" src="images/Bolt.png">
+	</div>
+
+	<!-- PHOTOS -->
+	<div class="row">		
+		<div class="col-md-5 col-lg-4">
+			<img class="square-cover rounded-borders mx-auto d-block" src="images/Hiatus.jpg" alt="Adam Yim">
+		</div>
+		<div class="col-md-7 col-lg-8">
+			<h2>Photos</h2>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+
+	<!-- SECTION DIVIDER -->
+	<div class="row">
+		<img class="section-break mx-auto d-block" src="images/Bolt.png">
+	</div>
+
+	<!-- VIDEOS -->
+	<div class="row">		
+		<div class="col">
+			<h2>Videos</h2>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+
+	<!-- SECTION DIVIDER -->
+	<div class="row">
+		<img class="section-break mx-auto d-block" src="images/Bolt.png">
+	</div>
+
+	<!-- WORDS -->
+	<div class="row">		
+		<div class="col">
+			<h2>Words</h2>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+
+	<!-- SECTION DIVIDER -->
+	<div class="row">
+		<img class="section-break mx-auto d-block" src="images/Bolt.png">
+	</div>
+
+</div>
 
 
 
