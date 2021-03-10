@@ -20,16 +20,39 @@ body, h2, h3, .nav-link, .dropdown-item {
 	line-height: 1;
 }
 
+.thin-underline-pink {
+	border-bottom: 1px solid #A81EE9;
+	display: inline-block;
+	line-height: 1;
+}
+
+.inline-link {
+	color: #3C1362;
+	text-decoration-style: dotted;
+}
+
+.inline-link:hover {
+	color: #A81EE9;
+}
+
+.header-icon {
+	color: #FFD6FB;
+}
+
+.header-icon:hover {
+	color: #FFAFF7;
+}
+
 /*********************************
  ---------------------------------
 
-NAV DROPDOWN STYLING
+NAV AND DROPDOWN STYLING
 
 ---------------------------------
 *********************************/
 
 .nav-link:hover {
-	color: #A81EE9;
+	color: #FFD6FB;
 }
 
 .dropdown-item:hover {
