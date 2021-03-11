@@ -137,7 +137,7 @@ SQUARE IMAGE W/ BORDERS
 ---------------------------------
 *********************************/
 
-.square-cover {
+.rounded-square-cover {
 	object-fit: cover;
 	max-width: 300px;
 	max-height: 300px;
@@ -145,11 +145,11 @@ SQUARE IMAGE W/ BORDERS
 	min-height: 175px;
 	width: 25vw;
 	height: 25vw;
-}
-
-.rounded-borders {
 	position: relative;
 	border-radius: 50px;
+}
+
+.colourful-borders {
 	border: 3px solid #A81EE9;
 	box-shadow:
 		0 0 0 2px #FFDA18,
