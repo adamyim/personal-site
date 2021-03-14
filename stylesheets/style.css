@@ -26,6 +26,96 @@ body, h2, h3, .nav-link, .dropdown-item {
 	line-height: 1;
 }
 
+.footer {
+	background-color: #FFAFF7;
+}
+
+/*********************************
+ ---------------------------------
+
+IMAGE CAROUSEL STUFF
+
+---------------------------------
+*********************************/
+
+.main-carousel {
+
+}
+
+.carousel-image {
+  display: block;
+  height: 50vh;
+  width: auto;
+  /* set min-width,
+     allow images to determine cell width */
+  min-width: 100px;
+  max-width: 100vw;
+  min-height: 200px;
+  margin-right: 5px;
+  /* vertically center */
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 4px;
+  object-fit: contain;
+}
+
+.main-carousel.is-fullscreen .carousel-image {
+  height: 100vh;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: 50vw;
+  margin-right: 50vw;
+}
+
+.flickity-enabled.is-fullscreen { z-index: 1050; }
+
+/* smaller, dark, rounded square */
+.flickity-button {
+  background: #333;
+}
+.flickity-button:hover {
+  background: #FFAFF7;
+}
+
+.flickity-prev-next-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+/* icon color */
+.flickity-button-icon {
+  fill: white;
+}
+
+@media only screen and (max-width: 768px) {
+	body .carousel-image {
+		height: 50vh;
+		width: auto;
+		max-height: 250px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	body .carousel-image {
+		height: 40vh;
+		width: auto;
+		max-height: 150px;
+	}
+	body .flickity-prev-next-button {
+		width: 30px;
+		height: 30px;
+	}
+}
+
+/*********************************
+ ---------------------------------
+
+INLINE LINK STYLING
+
+---------------------------------
+*********************************/
+
 .inline-link {
 	color: #3C1362;
 	text-decoration-style: dotted;
@@ -35,8 +125,17 @@ body, h2, h3, .nav-link, .dropdown-item {
 	color: #A81EE9;
 }
 
+/*********************************
+ ---------------------------------
+
+HEADER ICON STYLING
+
+---------------------------------
+*********************************/
+
 .header-icon {
 	color: #FFD6FB;
+	vertical-align: middle;
 }
 
 .header-icon:hover {
