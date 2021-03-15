@@ -32,7 +32,6 @@ var flkty = new Flickity( elem, {
   pageDots: false
 });
 
-
 /* Haven't figured out how to change centering on fullscreen
 flkty.on( 'fullscreenChange', function( isFullscreen ) {
 	if(isFullscreen==true){

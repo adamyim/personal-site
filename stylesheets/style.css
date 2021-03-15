@@ -28,6 +28,63 @@ body, h2, h3, .nav-link, .dropdown-item {
 
 .footer {
 	background-color: #FFAFF7;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.footer-left {
+	text-align: left;
+	font-weight: lighter;
+	vertical-align: middle;
+	font-size: 0.9em;
+}
+
+.footer-right {
+	text-align: right;
+	font-weight: lighter;
+	vertical-align: middle;
+	font-size: 0.9em;
+}
+
+@media only screen and (max-width: 768px) {
+	body .row.footer {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	body .footer-left {
+		text-align: center;
+		font-size: 0.9em;
+		margin-bottom: 0.25em;
+	}
+	body .footer-right {
+		text-align: center;
+		font-size: 0.9em;
+	}
+}
+
+@media only screen and (max-width: 374px) {
+	body .footer-left {
+		font-size: 0.7em;
+		margin-bottom: 0.25em;
+	}
+	body .footer-right {
+		font-size: 0.7em;
+	}
+}
+
+.footer-icon {
+	color: #3C1362;
+	vertical-align: middle;
+}
+
+.footer-icon:hover {
+	color: #FFD6FB;
+}
+
+.navbar-text {
+
 }
 
 /*********************************
