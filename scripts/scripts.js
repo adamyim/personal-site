@@ -20,6 +20,7 @@ $('.nav-link, .navbar-brand, .dropdown-item').click(function() {
 
 });
 
+// TODO: options for better carousel scrolling on mobile
 var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity( elem, {
   // options
