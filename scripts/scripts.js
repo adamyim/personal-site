@@ -27,7 +27,9 @@ var flkty = new Flickity( elem, {
   cellAlign: 'center',
   contain: true,
   wrapAround: true,
+  //adaptiveHeight: true,
   //groupCells: true,
+  setGallerySize: true,
   fullscreen: true,
   lazyLoad: 3,
   pageDots: false

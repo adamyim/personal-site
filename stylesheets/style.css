@@ -110,7 +110,7 @@ IMAGE CAROUSEL STUFF
   min-height: 200px;
   margin-right: 5px;
   /* vertically center */
-  top: 50%;
+  /* top: 50%; */
   transform: translateY(-50%);
   border-radius: 4px;
   object-fit: contain;
